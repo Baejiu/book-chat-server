@@ -24,8 +24,12 @@ export const config = {
     password: required('DB_PASSWORD'),
     name: required('DB_NAME'),
     port: required('DB_PORT'),
+    dialect: required('DB_DIALECT'),
   },
   cors: {
     allowedOrigin: required('CORS_ALLOW_ORIGIN'),
+  },
+  csrf: {
+    plainToken: required('CSRF_SECRET_KEY'),
   },
 };
